@@ -1,5 +1,5 @@
 function enable() {
-    var Name = document.getElementById("a").value;
+    var name = document.getElementById("a").value;
     var mob_no = document.getElementById("b").value;
     var email = document.getElementById("c").value;
     var age = document.getElementById('age').value;
@@ -19,7 +19,7 @@ function enable() {
 
 
         var json = {
-            "name": Name,
+            "name": name,
             "number": mob_no,
             "email": email,
             "age": age,
