@@ -4,7 +4,7 @@ function enable() {
     var email = document.getElementById("c").value;
     var age = document.getElementById('age').value;
     var address = document.getElementById('address').value;
-    if (Name.length === 0 || mob_no.length !== 10 || email.length < 5 || age.length === 0 || address.length === 0) {
+    if (name.length === 0 || mob_no.length !== 10 || email.length < 5 || age.length === 0 || address.length === 0) {
         alert("Invalid Input")
     }
     else {
