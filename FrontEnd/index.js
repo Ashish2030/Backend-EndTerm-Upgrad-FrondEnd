@@ -10,7 +10,7 @@ function enable() {
     else {
 
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "http://localhost:8080/posts", true);
+        xhttp.open("POST", "https://backend-endterm-upgrad-project.herokuapp.com/posts", true);
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
 
