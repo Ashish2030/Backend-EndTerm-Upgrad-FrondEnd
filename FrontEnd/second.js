@@ -14,7 +14,7 @@ window.onclick = function (event) {
 }
 function load() {
     var xhttp1 = new XMLHttpRequest();
-    xhttp1.open("GET", "http://localhost:8080/posts", true);
+    xhttp1.open("GET", "https://backend-endterm-upgrad-project.herokuapp.com/posts", true);
     xhttp1.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var list = JSON.parse(this.responseText);
@@ -69,7 +69,7 @@ function load() {
 function deleteRow(r) {
     var i = r.parentNode.parentNode.rowIndex;
     var m = document.getElementById('append').rows[i].cells[0].innerHTML;
-    var url = "http://localhost:8080/posts/" + m;
+    var url = "https://backend-endterm-upgrad-project.herokuapp.com/posts/" + m;
     console.log(url);
     var xhr = new XMLHttpRequest();
     xhr.open("DELETE", url, true);
@@ -94,7 +94,7 @@ function search() {
     }
     var xhttp1 = new XMLHttpRequest();
     var pp = document.getElementById("fname").value;
-    var url = "http://localhost:8080/search?keyword=" + pp;
+    var url = "https://backend-endterm-upgrad-project.herokuapp.com/search?keyword=" + pp;
     xhttp1.open("GET", url, true);
     xhttp1.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -190,7 +190,7 @@ function enable() {
     else {
         var xhttp = new XMLHttpRequest();
         var m = document.getElementById('id').value;
-        var url = "http://localhost:8080/editUser/" + m;
+        var url = "https://backend-endterm-upgrad-project.herokuapp.com/editUser/" + m;
         console.log(url);
         xhttp.open("PUT", url, true);
         xhttp.onreadystatechange = function () {
